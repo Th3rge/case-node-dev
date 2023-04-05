@@ -1,8 +1,10 @@
 import knex from "knex";
 import dotenv from "dotenv";
 
+//Confirango o dotenv
 dotenv.config()
 
+//Conexão com o Banco de Dados
 const db = knex({
     client: "pg",
     connection: {
