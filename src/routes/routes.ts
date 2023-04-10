@@ -1,5 +1,5 @@
-import app from "./app";
-import connections from "./connection";
+import app from "../app";
+import connections from "../connection";
 
 
 
