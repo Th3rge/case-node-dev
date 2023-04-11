@@ -1,6 +1,8 @@
-import app from "../connect/app";
-import connections from "../connect/connection";
+import app from '../index';
 import token from '../token/token'
+import { connections } from '../connect/connect'
+
+app.use(token)
 
 
 
@@ -8,19 +10,6 @@ import token from '../token/token'
 GET FUNCTIONS
 */
 
-//This function lists all products's category
-export const getCategory = app.get("/category", async (req, res) => {
-    try {
-        const result = await connections("category")
-
-        res.status(200)
-        .send(result)
-    
-    } catch (error: any) {
-        res.status(400)
-        .send(error.sqlMessage || error.message)
-    }
-});
 
 
 //This function lists all products 
@@ -134,9 +123,12 @@ DELETE FUNCTIONS
 //This delete a product	
 export const deleteProduct = app.delete("/product/:id", async (req, res) => {
     try {
+
+        const { id } = req.body
+        
         await connections("products")
         .delete()
-        .where("id", req.body.id)
+        .where(id)
 
         res.status(200)
         .send("The product was deleted!")
