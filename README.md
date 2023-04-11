@@ -26,4 +26,9 @@
 **MySQL**: O case pedia o MongoDB, mas travei muito na parte do MongoDB, pois o site oficial estava com defeito para baixa-lo, então para ter um DB optei pelo MySQL
 **NodeJS**: Manuseio de pacotes para o projeto 
 
+
+
+
+
+
 ![erros mongoDB](./mongodb.png)
