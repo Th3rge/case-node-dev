@@ -1,11 +1,9 @@
-import app from '../index'
+import app from '../index';
 import { connections } from '../connect/connect'
-//This function lists all products's category
 
-
-export const getCategory = app.get("/category", async (req, res) => {
+export const getProduct = app.get("/product/:id", async (req, res) => {
     try {
-        const result = await connections("products")
+        const result = await connections("product")
 
         res.status(200)
         .send(result)

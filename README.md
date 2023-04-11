@@ -21,14 +21,13 @@
 
 ## Tecnologias, Frameworks e Bibliotecas
 
-**Typescript**: typescript por ser tipada e excelente para o back-end, além de ser compatível com express, knex e mysql
-**Express**: Express para crir a conexão da API
-**MySQL**: O case pedia o MongoDB, mas travei muito na parte do MongoDB, pois o site oficial estava com defeito para baixa-lo, então para ter um DB optei pelo MySQL
-**NodeJS**: Manuseio de pacotes para o projeto 
+**Typescript**: typescript por ser tipada e excelente para o back-end, além de ser compatível com express, knex e mysql.
 
+**Express**: Express para crir a conexão da API.
 
+**MySQL**: O case pedia o MongoDB, mas travei muito na parte do MongoDB, pois o site oficial estava com defeito para baixa-lo, então para ter um DB optei pelo MySQL.
 
-
+**NodeJS**: Manuseio de pacotes para o projeto. 
 
 
 ![erros mongoDB](./mongodb.png)
